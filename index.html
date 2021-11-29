@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Img/luna icon.ico" type="icono">
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <title>ROLITAS</title>
+</head>
+<body>
+    <div class="main-container">
+      <div class="filters">
+        <select id="filter-genere" class="filter-genere">
+            <option value="all">Todos</option>
+            <option value="rock">Rock</option>
+            <option value="pop">Pop</option>
+            <option value="balada">Balada</option>
+        </select>
+        <input type="text" id="filter-title">
+      </div>
+        <div class="main-playing">
+          <div class="cover-container">
+            <img id="cover-image" src="img/caratulas/dirtypaws.jpg" />
+          </div>
+          <div class="progress-bar">
+            <input id="progress-bar" value="0" type="range" min="0" />
+          </div>
+          <div class="data-song-container">
+            <h1 id="title-song">Cuando Te Besé </h1>
+            <p id="artist-song">Paulo Londra</p>
+          </div>
+  
+          <div class="controls-container">
+            <button id="prev-btn">Prior</button>
+            <button id="play-btn">Play</button>
+            <button id="next-btn">Next</button>
+          </div>
+          <div class="volume">
+            <span class="control mdi mdi-volume-high"></span>
+            <input type="range" name="volume" id="volume-control" min="0" max="1" step="0.01">
+        </div>
+        </div>
+        <div class="list-song-container" id="list-song-container"></div>
+        
+      </div>
+      <audio id="audio-playing" src="audio/canciones/4 - Dirty Paws.mp3"></audio>
+    <script src="java/java.js"></script>
+</body>
+</html>
